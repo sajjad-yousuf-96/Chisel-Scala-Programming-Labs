@@ -1,4 +1,7 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/src/main/scala/labscala1/Main.scala:120:15: comparing values of types labscala1.Main.MeetupDomain.User and Int using `!=` will always yield true[0m
-[0m[[0m[33mwarn[0m] [0m[0m    if (useer != null.asInstanceOf[Int]){[0m
-[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/src/main/scala/labscala2/Main.scala:85:23: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0m    val html3 UsersDAO.find(2).map(userToHTML).map(displayPage).orElse(Some(displayError("id 2 not found")))[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/src/main/scala/labscala2/Main.scala:86:1: '=' expected.[0m
+[0m[[0m[31merror[0m] [0m[0m    println(s"[ID=1] : $html1")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
