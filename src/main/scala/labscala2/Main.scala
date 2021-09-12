@@ -48,8 +48,8 @@ object Main {
     object UsersDAO {
 
       import MeetupDomain._
-
       private val database = Map(1 -> User(1, "MSY", "sajjad.yousuf.96@gmail.com"))
+      println(s"database: $database")
       def find(id: Int): Option[User] = database.get(id)
     }
 
@@ -78,13 +78,15 @@ object Main {
     import Exercise._
     import Conversions._
     import FrontEnd._
-    val html1 = UsersDAO.find(1).map(userToHTML).fold(displayError("Id 1 not found"))(displayPage)
+    ///   code  vvvv  ///
+    val html1 = UsersDAO.find(1).map(userToHTML).fold(displayError("id 1 not find"))(displayPage)
+    val html2 = UsersDAO.find(2).map(userToHTML).fold(displayError("no id 2 in db"))(displayPage)
     // map return a list , fold return a single value
-    println("[ID=2] - one line with domain transformation")
-
-
+    println("- one line with domain transformation")
+    UsersDAO.find(2).map(userToHTML).map(displayPage).orElse(Some(displayError("id 2 not found"))).foreach(println)
     println(s"[ID=1] : $html1")
-    // println(s"[ID=2] : $html2")
-    // println(s"[ID=2] : $html3")
+    println(s"[ID=2] : $html2")
+
+    ////  code  ^^^^   ////
 }
 }
