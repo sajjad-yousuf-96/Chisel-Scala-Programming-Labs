@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/src/main/scala/labscala2/Main.scala:82:71: missing argument list for method fold in class Option[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `fold _` or `fold(_)(_)` instead of `fold`.[0m
+[0m[[0m[31merror[0m] [0m[0m    val html1 = UsersDAO.find(1).map(userToHTML).map(displayPage).fold(displayError("NEW1"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
