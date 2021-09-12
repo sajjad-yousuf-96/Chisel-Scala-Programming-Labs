@@ -82,11 +82,18 @@ object Main {
     val html1 = UsersDAO.find(1).map(userToHTML).fold(displayError("id 1 not find"))(displayPage)
     val html2 = UsersDAO.find(2).map(userToHTML).fold(displayError("no id 2 in db"))(displayPage)
     // map return a list , fold return a single value
-    println("- one line with domain transformation")
-    UsersDAO.find(2).map(userToHTML).map(displayPage).orElse(Some(displayError("id 2 not found"))).foreach(println)
+    val html3 = UsersDAO.find(1).map(userToHTML).map(displayPage).orElse(Some(displayError("id 2 not found"))).foreach(println)
     println(s"[ID=1] : $html1")
     println(s"[ID=2] : $html2")
-
+    println(s"[ID=2] : $html3")
+    // val html1 = UsersDAO.find(1)
+    // println(html1)
+    // val onError = displayError("raise an error")
+    // println(onError)
+    // val display = displayPage(userToHTML(html1.get))
+    // println(display)
+    // val result = html1.fold(onError)(display)
+    // println(result)
     ////  code  ^^^^   ////
 }
 }
