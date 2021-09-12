@@ -49,7 +49,7 @@ object Main {
 
       import MeetupDomain._
 
-      private val database = Map(1 -> User(1, "MSY", "sajjad.yousuf.96@gmail.com")); ((2, "MSYs", "sajjad.yousuf@gmail.com"));
+      private val database = Map(1 -> User(1, "MSY", "sajjad.yousuf.96@gmail.com"))
       def find(id: Int): Option[User] = database.get(id)
     }
 
