@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run labscala2.Main, Some(470e5d8d-410e-43ce-995b-c4273dbeca83), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/src/main/scala/labscala1/Main.scala:119:21: value get is not a member of labscala1.Main.MeetupDomain.User[0m
+[0m[[0m[31merror[0m] [0m[0m    val usser=useer.get[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/src/main/scala/labscala1/Main.scala:120:15: value None is not a member of labscala1.Main.MeetupDomain.User[0m
+[0m[[0m[31merror[0m] [0m[0m    if (useer.None){[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Sep 13, 2021, 1:33:39 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

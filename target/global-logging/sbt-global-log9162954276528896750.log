@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run labscala2.Main, Some(0a263b7f-2730-484e-a663-47dc2556c3f4), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/src/main/scala/labscala1/Main.scala:120:38: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[labscala1.Main.MeetupDomain.User][0m
+[0m[[0m[31merror[0m] [0m[0m required: labscala1.Main.MeetupDomain.User[0m
+[0m[[0m[31merror[0m] [0m[0m      println(displayPage(userToHTML(useer)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Sep 13, 2021, 1:27:58 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

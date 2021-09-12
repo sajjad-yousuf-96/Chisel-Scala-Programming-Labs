@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run labscala1.Main, Some(6c87a182-ee77-410c-b3d2-a76138aab3a3), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/msy/WORK/MERL/Chisel-Scala-Programming-Labs/src/main/scala/labscala1/Main.scala:121:44: not found: value usser[0m
+[0m[[0m[31merror[0m] [0m[0m      val display = displayPage(userToHTML(usser))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed Sep 13, 2021, 1:53:09 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
