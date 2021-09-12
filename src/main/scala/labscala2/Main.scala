@@ -86,14 +86,5 @@ object Main {
     println(s"[ID=1] : $html1")
     println(s"[ID=2] : $html2")
     println(s"[ID=2] : $html3")
-    // val html1 = UsersDAO.find(1)
-    // println(html1)
-    // val onError = displayError("raise an error")
-    // println(onError)
-    // val display = displayPage(userToHTML(html1.get))
-    // println(display)
-    // val result = html1.fold(onError)(display)
-    // println(result)
-    ////  code  ^^^^   ////
 }
 }
