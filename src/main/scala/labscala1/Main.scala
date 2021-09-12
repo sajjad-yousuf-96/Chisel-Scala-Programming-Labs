@@ -67,19 +67,20 @@ object Main {
     def findOption(id: Int): Option[User] = database.get(id) 
     def sajjad(): Unit = {
       println("DAtabase : DEMONSTATION - HOW TO HANDLE MISSING VALUE")
-      //////////////////////TRY
-      try {
-        val firstElement = findOrNull(1) //are you forced to check if exception?
-        println(firstElement)
-        val firstElement2 = findOption(2) //are you forced to check if exception?
-        println(firstElement2)
-        val ff= Conversions.userToHTML(database(1))
-        println(ff)
-        val fff=FrontEnd.displayPage(ff)
-        println(fff)
-      } catch {
-        case e: Exception => println("  --  there is no first element")
-      }
+      // //////////////////////TRY
+      // try {
+      //   val firstElement = findOrNull(1) //are you forced to check if exception?
+      //   println(firstElement)
+      //   val firstElement2 = findOption(1) //are you forced to check if exception?
+      //   println(firstElement2)
+      //   val ff= Conversions.userToHTML(firstElement2)
+      //   println(ff)
+      //   val fff=FrontEnd.displayPage(ff)
+      //   println(fff)
+      // } catch {
+      //   case e: Exception => println("  --  there is no first element")
+      // }
+      
     
   }
   }
@@ -114,5 +115,14 @@ object Main {
     //Exercises
     import Conversions._
     import FrontEnd._
-  }
+    val useer=UsersDAO.findOrNull(1)
+    // val usser=useer.get
+    if (useer != null.asInstanceOf[Int]){
+      val display = displayPage(userToHTML(useer))
+      println(display)
+    } else {
+      val r = displayError("There is no user with this id")
+      println(r)
+    }
+}
 }
